@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Word Processor </title>
+	
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Free Online Word Processor">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Muhammad Amhan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="function.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="header">
+		<h3> Online Text Editor </h3><hr>
+	</div>
+
+	<div id="fontStyle">	
+		<fieldset class="textFormat">
+			<legend>Text Format</legend>
+			<button type="button" onclick="bold()" title="make text bold"><strong>B</strong></button>
+			<button type="button" onclick="italic()" title="make text italic"><em>I</em></button>
+			<button type="button" onclick="underline()" title="make text underlined"><u>U</u></button>
+		</fieldset>
+	
+		<fieldset class="textFormat">
+			<legend>Font Family</legend>
+			<select onchange="fontFamily(this)">
+				<option value="Arial">Arial</option>
+				<option value="Calibri">Calibri</option>
+				<option value="Candara">Candara</option>
+				<option value="Impact">Impact</option>
+				<option value="Times">Times</option>
+				<option value="Cursive">Cursive</option>
+				<option value="Verdana">Verdana</option>
+			</select>
+		</fieldset>	
+		
+		<fieldset class="textFormat">
+			<legend>Text Color</legend>
+			<select onchange="textColor(this)">
+				<option value="#000000">Black</option>
+				<option value="#ffffff">White</option>
+				<option value="#ff0000">Red</option>
+				<option value="#FFA500">Orange</option>
+				<option value="#ffff00">Yellow</option>
+				<option value="#008000">Green</option>
+				<option value="#0000ff">Blue</option>
+				<option value="#800080">Purple</option>
+			</select>
+		</fieldset>
+			
+		<fieldset id="bgColor">
+			<legend>Background</legend>
+				rgb (<input id="r" type="text" oninput="changeBGColor()" onclick="makeREmpty()" onkeyup="noRChar()" value="255">,
+					 <input id="g" type="text" oninput="changeBGColor()" onclick="makeGEmpty()" onkeyup="noGChar()" value="255">,
+					 <input id="b" type="text" oninput="changeBGColor()" onclick="makeBEmpty()" onkeyup="noBChar()" value="255">)
+		</fieldset>	
+	</div>
+	
+	<div id="txtArea">
+		<textarea id="TextArea" placeholder="Please enter your text here..."></textarea>
+	</div>
+	
+	<div id="footer">
+		<footer>
+			<p><em>Copyright &copy; 2017 <strong>Muhammad Amhan</strong></em></p>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+
+	/* 
+	Just for testing purposes:
+	.bold {
+		font-weight: bold;
+	}
+	
+	.italic {
+		font-style: italic;
+	}
+	
+	.underline {
+		text-decoration: underline;
+	} */
+	
+	#header {
+		border: 0px solid black;
+		text-align: center;
+		margin: auto;
+		width: 50%;
+		padding-bottom: 5px;
+	}
+	
+	#txtArea {
+		border: 0px solid black;
+		width: 90%;
+		text-align: center;
+		margin: auto;
+		padding-top: 1em;
+		height: 90%;
+	}
+		
+	#txtArea textarea {
+		font-family: Arial;
+		resize: vertical;
+		overflow: scroll;
+		padding-top: 10px;
+		padding-left: 10px;
+		width: 90%;
+		min-height: 30em;
+	}
+		
+	#fontStyle{
+		border: 0px solid black;
+		width: 90%;
+		text-align: center;
+		margin: auto;
+	}
+		
+	.textFormat {
+		width: 6em;
+		display: inline-block;
+	}
+	
+	#bgColor {
+		width: 8em;
+		display: inline-block;
+		padding-top: -20px;
+	}
+		
+	#bgColor input {
+		width: 22px;
+		vertical-align: middle;
+		border: none;
+		display: inline-block;
+	}
+
+	#footer {
+		border: 0px solid black;
+		width: 90%;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 5em;
+		font-size: 13px;
+		font-family: Verdana;
+	}
+	
